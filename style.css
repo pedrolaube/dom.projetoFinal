@@ -1,0 +1,148 @@
+:root {
+  --marrom: #8a6950;
+  --creme: #f5f0e6;
+  --azul: #c8dce3;
+  --marrom-escuro: #604936;
+  --branco: #fffdf9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 24px 56px;
+  color: var(--marrom-escuro);
+  background: var(--creme);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+header {
+  max-width: 1180px;
+  margin: 0 auto 42px;
+  padding: 64px 32px 58px;
+  color: var(--branco);
+  background: var(--marrom);
+  border-radius: 0 0 28px 28px;
+  box-shadow: 0 12px 28px rgba(96, 73, 54, 0.16);
+  text-align: center;
+}
+
+header::before {
+  content: "CATÁLOGO DE ADOÇÃO";
+  display: block;
+  margin-bottom: 14px;
+  color: var(--azul);
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+header p {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: clamp(1.7rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.card-animal {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 26px;
+  overflow: hidden;
+  background: var(--azul);
+  border: 2px solid rgba(138, 105, 80, 0.18);
+  border-radius: 22px;
+  box-shadow: 0 8px 18px rgba(96, 73, 54, 0.08);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.card-animal::before {
+  content: "PET";
+  align-self: flex-end;
+  margin-bottom: auto;
+  color: var(--marrom);
+  font-size: 3rem;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.card-animal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 26px rgba(96, 73, 54, 0.16);
+}
+
+.informacoes h2 {
+  margin: 0 0 6px;
+  color: var(--marrom-escuro);
+  font-size: 1.8rem;
+}
+
+.informacoes p {
+  margin: 0 0 22px;
+  color: var(--marrom);
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.botao {
+  display: block;
+  padding: 13px 16px;
+  color: var(--branco);
+  background: var(--marrom);
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.botao:hover,
+.botao:focus-visible {
+  color: var(--marrom-escuro);
+  background: var(--creme);
+  outline: 3px solid rgba(138, 105, 80, 0.28);
+  outline-offset: 2px;
+}
+
+@media (max-width: 560px) {
+  body {
+    padding: 0 16px 32px;
+  }
+
+  header {
+    margin-bottom: 28px;
+    padding: 46px 20px 42px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card-animal {
+    min-height: 230px;
+  }
+}
