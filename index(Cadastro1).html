@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Doe seu animal | Adote um Amigo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style01.css">
+<link rel="stylesheet" href="style(Cadastro1).css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="paw" viewBox="0 0 64 64" fill="var(--green-dark)"><circle cx="20" cy="18" r="7"/><circle cx="38" cy="14" r="7"/><circle cx="50" cy="27" r="7"/><ellipse cx="32" cy="44" rx="17" ry="14"/></svg>
+      Adote um Amigo
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.getElementById('navlinks').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navlinks">
+      <li><a class="nav-a" href="index.html">Início</a></li>
+      <li><a class="nav-a" href="index.html#animais">Animais</a></li>
+      <li><a class="nav-a active" href="index(Cadastro1).html">Cadastrar Animal</a></li>
+      <li><a class="btn btn-primary" href="index.html#animais">Quero Adotar</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="wrap hero-cadastro">
+    <h1>Ajude seu animal a encontrar uma nova família</h1>
+    <p>Se você não pode mais cuidar do seu cão ou gato, cadastre-o aqui. Nossa equipe vai divulgá-lo até que a família certa apareça. Antes de continuar, veja alguns animais que já foram doados por outros tutores e hoje têm um novo lar.</p>
+  </section>
+
+  <section class="wrap carrossel-section">
+    <h2 class="section-title-sm">Histórias de doações recentes</h2>
+    <div class="carrossel">
+      <div class="carrossel-trilha">
+
+        <!-- ITEM 1 -->
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://placedog.net/400/300?id=1" alt="Cachorro doado, chamado Thor">
+          </div>
+          <span>Thor</span>
+          <small>Doado com sucesso</small>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://imgs.search.brave.com/IdtfPPu8WDwbbZyrwxQ54I6An8yKG1oht5fvElUDDfU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cGF0YXNkYWNhc2Eu/Y29tLmJyL3NpdGVz/L2RlZmF1bHQvZmls/ZXMvc3R5bGVzL2dh/bGxlcnlfY3JvcC9w/dWJsaWMvMjAyMi0w/OC9nYXRvLXNpYW1l/czguanBnLndlYnA_/aXRvaz14bTQ4clVm/Ug" alt="Gata doada, chamada Mia">
+          </div>
+          <span>Mia</span>
+          <small>Doada com sucesso</small>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://placedog.net/400/300?id=2" alt="Cachorro doado, chamado Bento">
+          </div>
+          <span>Bento</span>
+          <small>Doado com sucesso</small>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://cataas.com/cat?width=400&amp;height=300" alt="Gata doada, chamada Luna">
+          </div>
+          <span>Luna</span>
+          <small>Doada com sucesso</small>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://placedog.net/400/300?id=3" alt="Cachorra doada, chamada Nina">
+          </div>
+          <span>Nina</span>
+          <small>Doada com sucesso</small>
+        </div>
+
+        <!-- ITEM 6 -->
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://imgs.search.brave.com/YVXlj3rS8d1mNqaYTv1vf6Srp1e_Gc6sFfdOdqqLJ8I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb2Jh/c2libG9nLmJsb2Iu/Y29yZS53aW5kb3dz/Lm5ldC9wcm9kdWN0/aW9uLW9mYy8yMDIx/LzA4L2dhdG8tbGFy/YW5qYS1jb25oZWNh/LTYtcmFjYXMtY29t/LWVzc2EtY2FyYWN0/ZXJpc3RpY2EtNi53/ZWJw" alt="Gato doado, chamado Simba">
+          </div>
+          <span>Simba</span>
+          <small>Doado com sucesso</small>
+        </div>
+
+        <!-- ITENS REPETIDOS (para o loop ficar contínuo) -->
+
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://placedog.net/400/300?id=1" alt="Cachorro doado, chamado Thor">
+          </div>
+          <span>Thor</span>
+          <small>Doado com sucesso</small>
+        </div>
+
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://imgs.search.brave.com/IdtfPPu8WDwbbZyrwxQ54I6An8yKG1oht5fvElUDDfU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cGF0YXNkYWNhc2Eu/Y29tLmJyL3NpdGVz/L2RlZmF1bHQvZmls/ZXMvc3R5bGVzL2dh/bGxlcnlfY3JvcC9w/dWJsaWMvMjAyMi0w/OC9nYXRvLXNpYW1l/czguanBnLndlYnA_/aXRvaz14bTQ4clVm/Ug" alt="Gata doada, chamada Mia">
+          </div>
+          <span>Mia</span>
+          <small>Doada com sucesso</small>
+        </div>
+
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://placedog.net/400/300?id=2" alt="Cachorro doado, chamado Bento">
+          </div>
+          <span>Bento</span>
+          <small>Doado com sucesso</small>
+        </div>
+
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://cataas.com/cat?width=400&amp;height=300" alt="Gata doada, chamada Luna">
+          </div>
+          <span>Luna</span>
+          <small>Doada com sucesso</small>
+        </div>
+
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://placedog.net/400/300?id=3" alt="Cachorra doada, chamada Nina">
+          </div>
+          <span>Nina</span>
+          <small>Doada com sucesso</small>
+        </div>
+
+        <div class="carrossel-card">
+          <div class="bicho-art">
+            <img src="https://imgs.search.brave.com/YVXlj3rS8d1mNqaYTv1vf6Srp1e_Gc6sFfdOdqqLJ8I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb2Jh/c2libG9nLmJsb2Iu/Y29yZS53aW5kb3dz/Lm5ldC9wcm9kdWN0/aW9uLW9mYy8yMDIx/LzA4L2dhdG8tbGFy/YW5qYS1jb25oZWNh/LTYtcmFjYXMtY29t/LWVzc2EtY2FyYWN0/ZXJpc3RpY2EtNi53/ZWJw" alt="Gato doado, chamado Simba">
+          </div>
+          <span>Simba</span>
+          <small>Doado com sucesso</small>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap cta-prosseguir">
+    <p>Pronto para doar seu animal e ajudá-lo a encontrar um novo lar?</p>
+    <a class="btn btn-primary" href="index(Cadastro2).html">Continuar para o cadastro</a>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><svg class="paw" viewBox="0 0 64 64" fill="var(--green-dark)"><circle cx="20" cy="18" r="7"/><circle cx="38" cy="14" r="7"/><circle cx="50" cy="27" r="7"/><ellipse cx="32" cy="44" rx="17" ry="14"/></svg>Adote um Amigo</div>
+        <p>Conectamos cães e gatos que precisam de um lar a famílias prontas para amá-los.</p>
+      </div>
+      <div>
+        <h4>Páginas</h4>
+        <ul><li><a href="index.html">Início</a></li><li><a href="index.html#animais">Animais</a></li><li><a href="cadastro.html">Cadastrar Animal</a></li></ul>
+      </div>
+      <div>
+        <h4>Redes sociais</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-dark)" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--green-dark)"><path d="M13 22v-9h3l1-4h-4V7c0-1 .5-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9h4z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--green-dark)"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2z" opacity="0.15"/><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2z" fill="none" stroke="var(--green-dark)" stroke-width="1.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Adote um Amigo. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* style-boasvindas.css
+   Página de doação de animal (anterior ao cadastro). Carrega DEPOIS de style01.css. */
+
+/* Hero */
+.hero-cadastro {
+  padding: 60px 0 12px;
+  text-align: center;
+}
+.hero-cadastro h1 {
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  line-height: 1.15;
+  max-width: 22ch;
+  margin: 0 auto;
+}
+.hero-cadastro p {
+  margin: 18px auto 0;
+  max-width: 58ch;
+  font-size: 1.05rem;
+  color: #4b4b44;
+}
+
+/* Carrossel */
+.carrossel-section {
+  padding: 40px 0 20px;
+}
+.section-title-sm {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.carrossel {
+  position: relative;
+  overflow: hidden;
+}
+.carrossel-trilha {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+  animation: rolar 32s linear infinite;
+}
+.carrossel:hover .carrossel-trilha {
+  animation-play-state: paused;
+}
+@keyframes rolar {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.carrossel-card {
+  flex: none;
+  width: 230px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  padding-bottom: 14px;
+  text-align: center;
+}
+.carrossel-card .bicho-art {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--green-light);
+  overflow: hidden;
+}
+.carrossel-card .bicho-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.carrossel-card span {
+  display: block;
+  margin-top: 12px;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  color: var(--green-dark);
+  font-size: 1.02rem;
+}
+.carrossel-card small {
+  display: block;
+  color: var(--brown);
+  font-size: 0.82rem;
+  margin-top: 2px;
+}
+
+/* CTA final */
+.cta-prosseguir {
+  padding: 44px 0 76px;
+  text-align: center;
+}
+.cta-prosseguir .btn {
+  padding: 15px 34px;
+  font-size: 1.02rem;
+}
+.cta-prosseguir p {
+  margin: 0 0 20px;
+  color: #4b4b44;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 600px) {
+  .hero-cadastro { padding: 44px 0 8px; }
+  .carrossel-card { width: 190px; }
+}
