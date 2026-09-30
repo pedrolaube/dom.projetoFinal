@@ -14,7 +14,26 @@
 <script src="Home.Script.js" defer></script>
 </head>
 
-<body>
+<body class="is-loading" aria-busy="true">
+
+  <div id="loading-screen" role="status" aria-label="Carregando página">
+    <div class="loading-dots" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <p>Carregando...</p>
+    <div class="loading-logo" aria-label="Adote um Amigo">
+      <svg class="loading-logo-icon" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+        <circle cx="20" cy="18" r="7" />
+        <circle cx="38" cy="14" r="7" />
+        <circle cx="50" cy="27" r="7" />
+        <ellipse cx="32" cy="44" rx="17" ry="14" />
+      </svg>
+      <strong>Adote um Amigo</strong>
+    </div>
+  </div>
 
   <!----------------------------------------------------------------------------Fundo decorativo animado------------------------------------------------------------>
   <div class="bg-decor" aria-hidden="true">
@@ -76,17 +95,18 @@
     <!-- Card 1 -->
     <article class="pet-card">
       <div class="pet-image">
-        <img src="images/rex.png" alt="Foto do animal">
+        <img src="images/rex.png" alt="Foto de Rex">
       </div>
       <div class="pet-info">
         <h3>Rex</h3>
-        <p class="pet-details">
-        • Nome: Rex
-        • Raça: Yorkshire Terrier
-        • Idade: Filhote (estimada em ~3 meses)
-        •  Porte: Pequeno
-        • Sexo: Macho
-        • Pelagem: Média (Preto e Canela)</p>
+        <ul class="pet-details">
+          <li>Nome: Rex</li>
+          <li>Raça: Yorkshire Terrier</li>
+          <li>Idade: Filhote</li>
+          <li>Porte: Pequeno</li>
+          <li>Sexo: Macho</li>
+          <li>Pelagem: Média (Preta e Castanha)</li>
+        </ul>
         <a href="../LISTA_ANIMAIS/animais01.html#pet-rex" class="btn-detalhes">Ver detalhes</a>
       </div>
     </article>
@@ -94,11 +114,18 @@
     <!-- Card 2 -->
     <article class="pet-card">
       <div class="pet-image">
-        <img src="images/morgana.png" alt="Foto do animal">
+        <img src="images/morgana.png" alt="Foto de Morgana">
       </div>
       <div class="pet-info">
         <h3>Morgana</h3>
-        <p class="pet-details">Gato • Filhote • Fêmea</p>
+        <ul class="pet-details">
+          <li>Nome: Morgana</li>
+          <li>Raça aparente: Ragdoll</li>
+          <li>Idade: Adulta</li>
+          <li>Porte: Médio para grande</li>
+          <li>Sexo: Fêmea</li>
+          <li>Pelagem: Longa, branca e marrom, com olhos azuis</li>
+        </ul>
         <a href="../LISTA_ANIMAIS/animais01.html#pet-mia" class="btn-detalhes">Ver detalhes</a>
       </div>
     </article>
@@ -106,24 +133,76 @@
     <!-- Card 3 -->
     <article class="pet-card">
       <div class="pet-image">
-        <img src="images/fred.png" alt="Foto do animal">
+        <img src="images/fred.png" alt="Foto de Fred">
       </div>
       <div class="pet-info">
-        <h3>Thor</h3>
-        <p class="pet-details">Cachorro • Idoso • Macho</p>
-        <a href="../LISTA_ANIMAIS/animais01.html#pet-thor" class="btn-detalhes">Ver detalhes</a>
+        <h3>Fred</h3>
+        <ul class="pet-details">
+          <li>Nome: Fred</li>
+          <li>Raça aparente: Persa</li>
+          <li>Idade: Adulto</li>
+          <li>Porte: Médio</li>
+          <li>Sexo: Macho</li>
+          <li>Pelagem: Longa e alaranjada, com rosto achatado</li>
+        </ul>
+        <a href="../LISTA_ANIMAIS/animais01.html#pet-fred" class="btn-detalhes">Ver detalhes</a>
       </div>
     </article>
   
    <!-- Card 4 -->
     <article class="pet-card">
       <div class="pet-image">
-        <img src="images/zeus.png" alt="Foto do animal">
+        <img src="images/zeus.png" alt="Foto de Zeus">
       </div>
       <div class="pet-info">
-        <h3>Thor</h3>
-        <p class="pet-details">Cachorro • Idoso • Macho</p>
-        <a href="../LISTA_ANIMAIS/animais01.html#pet-thor" class="btn-detalhes">Ver detalhes</a>
+        <h3>Zeus</h3>
+        <ul class="pet-details">
+          <li>Nome: Zeus</li>
+          <li>Raça: Rottweiler</li>
+          <li>Idade: Adulto</li>
+          <li>Porte: Grande</li>
+          <li>Sexo: Macho</li>
+          <li>Pelagem: Curta, preta e castanha</li>
+        </ul>
+        <a href="../LISTA_ANIMAIS/animais01.html#pet-zeus" class="btn-detalhes">Ver detalhes</a>
+      </div>
+    </article>
+
+    <!-- Card 5 -->
+    <article class="pet-card">
+      <div class="pet-image">
+        <img src="images/croiasaint.png" alt="Foto de Croiasaint">
+      </div>
+      <div class="pet-info">
+        <h3>Croiasaint</h3>
+        <ul class="pet-details">
+          <li>Nome: Croiasaint</li>
+          <li>Raça: Bulldog Francês</li>
+          <li>Idade: Idoso</li>
+          <li>Porte: Pequeno</li>
+          <li>Sexo: Macho</li>
+          <li>Pelagem: Curta e clara</li>
+        </ul>
+        <a href="../LISTA_ANIMAIS/animais01.html#pet-cro" class="btn-detalhes">Ver detalhes</a>
+      </div>
+    </article>
+
+    <!-- Card 6 -->
+    <article class="pet-card">
+      <div class="pet-image">
+        <img src="images/oliver.png" alt="Foto de Oliver">
+      </div>
+      <div class="pet-info">
+        <h3>Oliver</h3>
+        <ul class="pet-details">
+          <li>Nome: Oliver</li>
+          <li>Raça: Maine Coon</li>
+          <li>Idade: Idoso</li>
+          <li>Porte: Grande</li>
+          <li>Sexo: Macho</li>
+          <li>Pelagem: Longa e volumosa</li>
+        </ul>
+        <a href="../LISTA_ANIMAIS/animais01.html#pet-oli" class="btn-detalhes">Ver detalhes</a>
       </div>
     </article>
   </div>
