@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Adote um Amigo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="Home.style.css">
+<script src="Home.Script.js" defer></script>
+</head>
+
+<body>
+
+  <!----------------------------------------------------------------------------Fundo decorativo animado------------------------------------------------------------>
+  <div class="bg-decor" aria-hidden="true">
+    <span class="bg-glow bg-glow--1"></span>
+    <span class="bg-glow bg-glow--2"></span>
+    <svg class="bg-paw p1" viewBox="0 0 64 64" fill="currentColor"><circle cx="20" cy="18" r="7"/><circle cx="38" cy="14" r="7"/><circle cx="50" cy="27" r="7"/><ellipse cx="32" cy="44" rx="17" ry="14"/></svg>
+    <svg class="bg-paw p2" viewBox="0 0 64 64" fill="currentColor"><circle cx="20" cy="18" r="7"/><circle cx="38" cy="14" r="7"/><circle cx="50" cy="27" r="7"/><ellipse cx="32" cy="44" rx="17" ry="14"/></svg>
+    <svg class="bg-paw p3" viewBox="0 0 64 64" fill="currentColor"><circle cx="20" cy="18" r="7"/><circle cx="38" cy="14" r="7"/><circle cx="50" cy="27" r="7"/><ellipse cx="32" cy="44" rx="17" ry="14"/></svg>
+    <svg class="bg-paw p4" viewBox="0 0 64 64" fill="currentColor"><circle cx="20" cy="18" r="7"/><circle cx="38" cy="14" r="7"/><circle cx="50" cy="27" r="7"/><ellipse cx="32" cy="44" rx="17" ry="14"/></svg>
+    <svg class="bg-paw p5" viewBox="0 0 64 64" fill="currentColor"><circle cx="20" cy="18" r="7"/><circle cx="38" cy="14" r="7"/><circle cx="50" cy="27" r="7"/><ellipse cx="32" cy="44" rx="17" ry="14"/></svg>
+  </div>
+
+  <header>
+    <div class="logo">
+      <svg class="logo-icon" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+        <circle cx="20" cy="18" r="7"/>
+        <circle cx="38" cy="14" r="7"/>
+        <circle cx="50" cy="27" r="7"/>
+        <ellipse cx="32" cy="44" rx="17" ry="14"/>
+      </svg>
+      <h1>Adote um Amigo</h1>
+    </div>
+    <a href="Home.html">Inicio</a>
+    <a href="../LISTA_ANIMAIS/animais01.html">Animais</a>
+    <a href="../CADASTRAR/index(Cadastro2).html">Cadastrar animais</a>
+  </header>
+
+  <main>
+    <div class="hero reveal">
+      <h1>Encontre seu novo melhor amigo</h1>
+
+      <!-- Carrossel de imagens -->
+      <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-carousel-track">
+          <img src="images/raca-de-cachorro-muito-popular-no-brasil-3.jpg" alt="Cachorro esperando por um lar" class="hero-carousel-slide is-active">
+          <img src="images/images.jpg" alt="Animal disponível para adoção" class="hero-carousel-slide">
+          <img src="images/7omj8pi479k5onajw4pjfedsl.jpg" alt="Cachorro disponível para adoção" class="hero-carousel-slide">
+        </div>
+        <button type="button" class="hero-carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+        <button type="button" class="hero-carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
+        <div class="hero-carousel-dots"></div>
+      </div>
+
+      <p>Dezenas de cachorros esperam, com paciência e carinho, por uma família disposta a lhes dar um novo lar. Comece essa história hoje.</p>
+
+<button id="bntEncontrarAnimal" onclick="window.location.href='../LISTA_ANIMAIS/animais01.html'">
+  Encontrar um amigo
+</button>
+    </div>
+
+
+<!-----------------------------------------------------------------------------------------------------------Cartões---------------------------------------------->
+
+
+    <section class="pets-section reveal">
+  <h2>Animais esperando por um lar</h2>
+
+  <div class="pets-grid">
+    <!-- Card 1 -->
+    <article class="pet-card">
+      <div class="pet-image">
+        <img src="images/rex.png" alt="Foto do animal">
+      </div>
+      <div class="pet-info">
+        <h3>Rex</h3>
+        <p class="pet-details">
+        • Nome: Rex
+        • Raça: Yorkshire Terrier
+        • Idade: Filhote (estimada em ~3 meses)
+        •  Porte: Pequeno
+        • Sexo: Macho
+        • Pelagem: Média (Preto e Canela)</p>
+        <a href="../LISTA_ANIMAIS/animais01.html#pet-rex" class="btn-detalhes">Ver detalhes</a>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="pet-card">
+      <div class="pet-image">
+        <img src="images/morgana.png" alt="Foto do animal">
+      </div>
+      <div class="pet-info">
+        <h3>Morgana</h3>
+        <p class="pet-details">Gato • Filhote • Fêmea</p>
+        <a href="../LISTA_ANIMAIS/animais01.html#pet-mia" class="btn-detalhes">Ver detalhes</a>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="pet-card">
+      <div class="pet-image">
+        <img src="images/fred.png" alt="Foto do animal">
+      </div>
+      <div class="pet-info">
+        <h3>Thor</h3>
+        <p class="pet-details">Cachorro • Idoso • Macho</p>
+        <a href="../LISTA_ANIMAIS/animais01.html#pet-thor" class="btn-detalhes">Ver detalhes</a>
+      </div>
+    </article>
+  
+   <!-- Card 4 -->
+    <article class="pet-card">
+      <div class="pet-image">
+        <img src="images/zeus.png" alt="Foto do animal">
+      </div>
+      <div class="pet-info">
+        <h3>Thor</h3>
+        <p class="pet-details">Cachorro • Idoso • Macho</p>
+        <a href="../LISTA_ANIMAIS/animais01.html#pet-thor" class="btn-detalhes">Ver detalhes</a>
+      </div>
+    </article>
+  </div>
+  </div>
+</section>
+
+<!-- -------------------------------------------------------------------------------------------------Secção Cadastrar Animal----------------------------------------------------------------------------------------------------------------------------------------->
+<section class="banner-cadastrar reveal">
+  <div class="banner-content">
+    <h2>Conhece um animal que precisa de um lar?</h2>
+    <p>Cadastre um cão que encontrou pela sua região e ajude nossa equipe a encontrar uma família para ele.</p>
+    <a href="../CADASTRAR/index(Cadastro2).html" class="btn-banner">Cadastrar animal</a>
+  </div>
+</section>
+
+
+  </main>
+  
+  <!--------------------------------------Footer--------------------------------------------------->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Coluna 1: Logo e Descrição -->
+    <div class="footer-col brand-col">
+      <div class="logo">
+        <span class="icon">🐾</span>
+        <h3>Adote um Amigo</h3>
+      </div>
+      <p>Conectamos cães que precisam de um lar a famílias prontas para amá-los.</p>
+    </div>
+
+    <!-- Coluna 2: Páginas -->
+    <div class="footer-col">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="Home.html">Início</a></li>
+        <li><a href="../LISTA_ANIMAIS/animais01.html">Animais</a></li>
+        <li><a href="../CADASTRAR/index(Cadastro2).html">Cadastrar animais</a></li>
+      </ul>
+    </div>
+
+    <!-- Coluna 3: Redes Sociais -->
+    <div class="footer-col">
+      <h4>Redes sociais</h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/?locale=pt_BR" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2026 Adote um Amigo. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+
+</html>
+
