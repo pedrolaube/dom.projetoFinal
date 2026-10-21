@@ -1,0 +1,51 @@
+
+.logo .logo-text {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+header nav {
+  display: contents;
+}
+
+.catalogo-main {
+  position: relative;
+  z-index: 1;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+
+.catalogo-head {
+  max-width: 60ch;
+  margin: 0 0 36px;
+}
+
+.catalogo-head h1 {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  line-height: 1.15;
+}
+
+.catalogo-head p {
+  margin-top: 14px;
+  font-size: 1.05rem;
+  color: #4b4b44;
+}
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .catalogo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .catalogo-grid {
+    grid-template-columns: 1fr;
+  }
+}
