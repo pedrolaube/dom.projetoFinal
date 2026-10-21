@@ -1,5 +1,5 @@
 const loadingStartedAt = performance.now();
-const minimumLoadingTime = 10000;
+const minimumLoadingTime = 5000;
 
 document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener(
